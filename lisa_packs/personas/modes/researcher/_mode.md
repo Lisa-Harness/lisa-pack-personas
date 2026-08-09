@@ -15,7 +15,7 @@ routing_intent_keywords:
     - search
     - find
     - investigate
-allowed_operation_ids: [markdown_forge_document, okf_emit_concept, delegate, fork, synthesize_and_store_learning]
+allowed_operation_ids: [markdown_forge_document, okf_emit_concept, delegate, fork, synthesize_and_store_learning, web_search]
 allowed_tool_ids:
   - coding_outline_source
   - coding_search_code

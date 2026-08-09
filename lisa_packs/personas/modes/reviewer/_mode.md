@@ -17,7 +17,7 @@ routing_intent_keywords:
     - design
     - architect
     - structure
-allowed_operation_ids: [okf_validate, okf_emit_concept, delegate, fork, recall_memory, synthesize_and_store_learning]
+allowed_operation_ids: [markdown_forge_document, okf_validate, delegate, fork, recall_memory, synthesize_and_store_learning]
 allowed_tool_ids:
   - coding_outline_source
   - coding_search_code
