@@ -15,7 +15,7 @@ routing_intent_keywords:
     - write code
     - mutate
     - apply
-allowed_operation_ids: [delegate, fork, okf_emit_concept, recall_memory, synthesize_and_store_learning]
+allowed_operation_ids: [delegate, fork, okf_emit_concept, markdown_forge_document,recall_memory, synthesize_and_store_learning]
 allowed_tool_ids:
   - coding_list_directory
   - coding_find_files

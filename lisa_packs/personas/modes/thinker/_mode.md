@@ -23,7 +23,7 @@ routing_intent_keywords:
     - can you confirm
     - help me decide
 allowed_operation_ids: [web_search]
-command_pattern: "^(?:/)?think(?:[\\s,:;]+(?P<query>.+))?$"
+command_pattern: '^(?:/)?think(?:er)?(?:[\s,:;]+(?P<query>.+))?$'
 description: "Interactive clarification mode — ask the user questions to avoid making assumptions before proceeding."
 ---
 # Thinker Mode
