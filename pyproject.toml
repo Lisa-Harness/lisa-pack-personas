@@ -1,1 +1,25 @@
-[build-system]requires = ["setuptools>=68"]build-backend = "setuptools.build_meta"[tool.setuptools.packages.find]where = ["."]include = ["lisa_packs*", "lisa_packs.personas*"][tool.setuptools.package-data]"lisa_packs.personas" = [    "modes/**/*.md",    "modes/**/*.yaml",    "modes/**/*.yml",][project]name = "lisa-pack-personas"version = "0.1.0"description = "Cognitive task-phase personas for Lisa"dependencies = [    "lisa-sdk"][project.entry-points."lisa.extensions.content_roots"]lisa-pack-personas = "lisa_packs.personas:get_content_root"
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["lisa_packs*", "lisa_packs.personas*"]
+
+[tool.setuptools.package-data]
+"lisa_packs.personas" = [
+    "modes/**/*.md",
+    "modes/**/*.yaml",
+    "modes/**/*.yml",
+]
+
+[project]
+name = "lisa-pack-personas"
+version = "0.1.0"
+description = "Cognitive task-phase personas for Lisa"
+dependencies = [
+    "lisa-sdk"
+]
+
+[project.entry-points."lisa.extensions.content_roots"]
+lisa-pack-personas = "lisa_packs.personas:get_content_root"
