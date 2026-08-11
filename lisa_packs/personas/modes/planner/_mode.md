@@ -3,7 +3,7 @@ mode_id: planner
 mode_provider_id: lisa-pack-personas
 mode_kind: action
 routable: true
-priority: 15
+priority: 10
 routing_intent_tags: [plan]
 satisfies_intents: [plan]
 routing_intent_keywords:
@@ -13,6 +13,7 @@ routing_intent_keywords:
     - multi-step
     - chain
     - orchestrate
+    - checklist
 entry_operation_ids: [plan_workflow]
 entry_op_kind: routing
 command_pattern: '^(?:/)?plan(?:[\s,:;]+(?P<query>.+))?$'

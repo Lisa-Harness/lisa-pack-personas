@@ -4,17 +4,15 @@ mode_provider_id: lisa-pack-personas
 mode_kind: chat
 routable: true
 command_pattern: '^(?:/)?exec(?:ute|utor)?(?:[\s,:;]+(?P<query>.+))?$'
-priority: 12
+priority: 6
 routing_intent_tags: [execute, code, write, implement, mutate]
 satisfies_intents: [execute, code, write, implement, mutate]
 routing_intent_keywords:
   execute:
-    - execute
+    - change
     - implement
     - code
     - write code
-    - mutate
-    - apply
 allowed_operation_ids: [delegate, fork, okf_emit_concept, markdown_forge_document,recall_memory, synthesize_and_store_learning]
 allowed_tool_ids:
   - coding_list_directory

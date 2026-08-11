@@ -4,23 +4,22 @@ mode_provider_id: lisa-pack-personas
 start_stage_id: none
 mode_kind: chat
 routable: true
-priority: 5
+priority: 7
 pre_turn_operation_ids: [discussion_briefing]
-routing_intent_tags: [clarify]
-satisfies_intents: [clarify]
+routing_intent_tags: [clarify, question]
+satisfies_intents: [clarify, question]
 routing_intent_keywords:
   clarify:
     - clarify
     - not sure
-    - need to know
-    - what do you mean
-    - ask you
+    - figure out
+    - what it means
+    - asking about
     - questions about
     - should i
-    - which option
+    - options for
     - ambiguous
     - unclear
-    - can you confirm
     - help me decide
 allowed_operation_ids: [web_search]
 command_pattern: '^(?:/)?think(?:er)?(?:[\s,:;]+(?P<query>.+))?$'

@@ -4,15 +4,15 @@ mode_provider_id: lisa-pack-personas
 mode_kind: chat
 routable: true
 command_pattern: '^(?:/)?review(?:er)?(?:[\s,:;]+(?P<query>.+))?$'
-priority: 13
-routing_intent_tags: [review, architect, analyze]
-satisfies_intents: [review, architect, analyze]
+priority: 9
+routing_intent_tags: [read, review, architect, analyze]
+satisfies_intents: [read, review, architect, analyze]
 routing_intent_keywords:
   review:
     - review
     - analyze
     - critique
-    - feedback
+    - read
   architect:
     - design
     - architect
