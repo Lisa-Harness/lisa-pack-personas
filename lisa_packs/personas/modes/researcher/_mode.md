@@ -22,6 +22,7 @@ allowed_tool_ids:
   - coding_read_file
   - coding_list_directory
   - coding_find_files
+  - thread_read_range
 description: "Gathers context across the web and codebase, synthesizes it, and writes durable artifacts."
 ---
 

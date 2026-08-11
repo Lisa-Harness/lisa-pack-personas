@@ -26,6 +26,7 @@ allowed_tool_ids:
   - coding_find_files
   - coding_read_copilot_customizations
   - markdown_generate
+  - thread_read_range
 description: "Analyzes code/architecture and produces design documents, feedback, or conceptual maps."
 ---
 
