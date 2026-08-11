@@ -4,7 +4,7 @@ mode_provider_id: lisa-pack-personas
 mode_kind: chat
 routable: true
 command_pattern: '^(?:/)?research(?:er)?(?:[\s,:;]+(?P<query>.+))?$'
-priority: 8
+priority: 7
 routing_intent_tags: [research, search, gather, learn]
 satisfies_intents: [research, search, gather, learn]
 routing_intent_keywords:

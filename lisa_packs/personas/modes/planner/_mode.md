@@ -3,7 +3,7 @@ mode_id: planner
 mode_provider_id: lisa-pack-personas
 mode_kind: action
 routable: true
-priority: 10
+priority: 11
 routing_intent_tags: [plan]
 satisfies_intents: [plan]
 routing_intent_keywords:

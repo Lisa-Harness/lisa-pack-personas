@@ -4,7 +4,7 @@ mode_provider_id: lisa-pack-personas
 mode_kind: chat
 routable: true
 command_pattern: '^(?:/)?exec(?:ute|utor)?(?:[\s,:;]+(?P<query>.+))?$'
-priority: 6
+priority: 1
 routing_intent_tags: [execute, code, write, implement, mutate]
 satisfies_intents: [execute, code, write, implement, mutate]
 routing_intent_keywords:
