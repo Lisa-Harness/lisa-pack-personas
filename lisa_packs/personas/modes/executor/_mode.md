@@ -32,8 +32,6 @@ allowed_tool_ids:
   - coding_read_copilot_customizations
   - github_open_pull_request
   - web_search
-yield_policy:
-  allowed: true
 description: "Mutates the workspace, writes code, and validates the outcome."
 ---
 

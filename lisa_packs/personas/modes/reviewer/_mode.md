@@ -26,8 +26,6 @@ allowed_tool_ids:
   - coding_find_files
   - coding_read_copilot_customizations
   - markdown_generate
-yield_policy:
-  allowed: true
 description: "Analyzes code/architecture and produces design documents, feedback, or conceptual maps."
 ---
 

@@ -16,7 +16,6 @@ routing_intent_keywords:
 entry_operation_ids: [plan_workflow]
 entry_op_kind: routing
 command_pattern: '^(?:/)?plan(?:[\s,:;]+(?P<query>.+))?$'
-required_capabilities: [reasoning, tools]
 needs_full_mode_catalog: true
 description: "Orchestrates tasks, breaks down intent, uses fork to dispatch parallel sub-tasks."
 ---
