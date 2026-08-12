@@ -16,7 +16,6 @@ routing_intent_keywords:
     - wrap up
     - recap
 allowed_operation_ids: [markdown_forge_document, recall_memory, synthesize_and_store_learning]
-allowed_tool_ids: [thread_read_range]
 description: "Terminal last-resort mode that expounds the work and analysis done so far into a durable markdown artifact. Used by the forced-transition-before-cap path to guarantee every turn ends productively."
 ---
 

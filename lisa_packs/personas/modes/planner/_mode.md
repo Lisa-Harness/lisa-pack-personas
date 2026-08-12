@@ -17,7 +17,7 @@ routing_intent_keywords:
     - checklist
 entry_operation_ids: [plan_workflow]
 entry_op_kind: routing
-command_pattern: '^(?:/)?plan(?:[\s,:;]+(?P<query>.+))?$'
+command_pattern: '^(?:/)?plan(?:er)?(?:[\s,:;]+(?P<query>.+))?$'
 needs_full_mode_catalog: true
 description: "Orchestrates tasks, breaks down intent, uses fork to dispatch parallel sub-tasks."
 ---

@@ -27,7 +27,7 @@ routing_intent_keywords:
     - write code
     - write the code
 fork_allowed: true
-allowed_operation_ids: [delegate, fork, okf_emit_concept, markdown_forge_document,recall_memory, synthesize_and_store_learning]
+allowed_operation_ids: [delegate, fork, okf_emit_concept, markdown_forge_document, recall_memory, synthesize_and_store_learning]
 allowed_tool_ids:
   - coding_list_directory
   - coding_find_files
@@ -43,7 +43,6 @@ allowed_tool_ids:
   - coding_cleanup_worktree
   - coding_read_copilot_customizations
   - github_open_pull_request
-  - web_search
 description: "Mutates the workspace, writes code, and validates the outcome."
 ---
 
