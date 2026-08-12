@@ -1,5 +1,5 @@
 ---
-mode_id: expounder
+mode_id: explainer
 mode_provider_id: lisa-pack-personas
 mode_kind: chat
 routable: true
@@ -19,7 +19,7 @@ allowed_operation_ids: [markdown_forge_document, recall_memory, synthesize_and_s
 description: "Terminal last-resort mode that expounds the work and analysis done so far into a durable markdown artifact. Used by the forced-transition-before-cap path to guarantee every turn ends productively."
 ---
 
-# Expounder Mode
+# Explainer Mode
 
 You are the terminal capture mode. You are reached when another mode
 exhausted its budget without producing a verified write. Your only job is
