@@ -6,8 +6,8 @@ mode_kind: chat
 routable: true
 priority: 5
 pre_turn_operation_ids: [discussion_briefing]
-routing_intent_tags: [clarify, question]
-satisfies_intents: [clarify, question]
+routing_intent_tags: [clarify, consider, question]
+satisfies_intents: [clarify, consider, question]
 routing_intent_keywords:
   clarify:
     - clarify
@@ -21,6 +21,25 @@ routing_intent_keywords:
     - ambiguous
     - unclear
     - help me decide
+  consider:
+    - considering
+    - thinking about
+    - thinking of
+    - pro con
+    - pro/con
+    - pros and cons
+    - weighing if
+    - weighing whether
+    - weighing which
+  question:
+    - question
+    - asking
+    - wondering
+    - what is
+    - how to
+    - why is
+    - what are
+    - what does it mean
 allowed_operation_ids: [web_search]
 command_pattern: '^(?:/)?think(?:er)?(?:[\s,:;]+(?P<query>.+))?$'
 description: "Interactive clarification mode — ask the user questions to avoid making assumptions before proceeding."

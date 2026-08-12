@@ -12,11 +12,11 @@ routing_intent_keywords:
     - review
     - analyze
     - critique
-    - read
   architect:
     - design
     - architect
     - structure
+fork_allowed: true
 allowed_operation_ids: [markdown_forge_document, okf_validate, delegate, fork, recall_memory, synthesize_and_store_learning]
 allowed_tool_ids:
   - coding_outline_source

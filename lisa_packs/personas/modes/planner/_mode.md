@@ -9,10 +9,11 @@ satisfies_intents: [plan]
 routing_intent_keywords:
   plan:
     - plan
+    - prioritized list
     - workflow
     - multi-step
-    - chain
     - orchestrate
+    - check list
     - checklist
 entry_operation_ids: [plan_workflow]
 entry_op_kind: routing

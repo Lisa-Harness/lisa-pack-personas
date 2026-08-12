@@ -5,16 +5,15 @@ mode_kind: chat
 routable: true
 command_pattern: '^(?:/)?research(?:er)?(?:[\s,:;]+(?P<query>.+))?$'
 priority: 7
-routing_intent_tags: [research, search, gather, learn]
-satisfies_intents: [research, search, gather, learn]
+routing_intent_tags: [research, gather, learn]
+satisfies_intents: [research, gather, learn]
 routing_intent_keywords:
   research:
     - research
     - gather
     - learn
-    - search
-    - find
     - investigate
+fork_allowed: true
 allowed_operation_ids: [markdown_forge_document, okf_emit_concept, delegate, fork, synthesize_and_store_learning, web_search]
 allowed_tool_ids:
   - coding_outline_source
