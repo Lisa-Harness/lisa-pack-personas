@@ -21,7 +21,6 @@ allowed_operation_ids:
   - markdown_forge_document
   - okf_emit_concept
   - synthesize_and_store_learning
-  - web_search
 allowed_tool_ids:
   - web_search
   - coding_outline_source
