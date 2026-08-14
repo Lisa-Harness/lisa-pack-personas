@@ -9,12 +9,19 @@ routing_intent_tags: [research, gather, learn]
 satisfies_intents: [research, gather, learn]
 routing_intent_keywords:
   research:
-    - research
     - gather
-    - learn
     - investigate
+    - learn
+    - research
+    - search
 fork_allowed: true
-allowed_operation_ids: [markdown_forge_document, okf_emit_concept, delegate, fork, synthesize_and_store_learning, web_search]
+allowed_operation_ids:
+  - delegate
+  - fork
+  - markdown_forge_document
+  - okf_emit_concept
+  - synthesize_and_store_learning
+  - web_search
 allowed_tool_ids:
   - coding_outline_source
   - coding_search_code

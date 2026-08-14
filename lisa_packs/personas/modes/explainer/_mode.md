@@ -3,18 +3,24 @@ mode_id: explainer
 mode_provider_id: lisa-pack-personas
 mode_kind: chat
 routable: true
-command_pattern: '^(?:/)?expound(?:er)?(?:[\s,:;]+(?P<query>.+))?$'
+command_pattern: '^(?:/)?explain(?:er)?(?:[\s,:;]+(?P<query>.+))?$'
 priority: 1
-routing_intent_tags: [expound, summarize, capture]
-satisfies_intents: [expound, summarize, capture]
+routing_intent_tags: [explain, expound, summarize, capture]
+satisfies_intents: [explain, expound, summarize, capture]
 routing_intent_keywords:
-  expound:
-    - expound
-    - summarize
+  explain:
     - capture
+    - explain
+    - expound
+    - output
+    - recap
+    - summarize
     - synthesize
     - wrap up
-    - recap
+    - write it
+    - write that
+    - write document
+    - write markdown
 allowed_operation_ids: [markdown_forge_document, recall_memory, synthesize_and_store_learning]
 description: "Terminal last-resort mode that expounds the work and analysis done so far into a durable markdown artifact. Used by the forced-transition-before-cap path to guarantee every turn ends productively."
 ---
