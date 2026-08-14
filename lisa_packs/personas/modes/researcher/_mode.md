@@ -23,6 +23,7 @@ allowed_operation_ids:
   - synthesize_and_store_learning
   - web_search
 allowed_tool_ids:
+  - web_search
   - coding_outline_source
   - coding_search_code
   - coding_read_file
