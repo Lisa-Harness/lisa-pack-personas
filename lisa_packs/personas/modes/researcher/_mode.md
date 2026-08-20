@@ -9,7 +9,11 @@ routing_intent_tags: [research, gather, learn]
 satisfies_intents: [research, gather, learn]
 routing_intent_keywords:
   research:
+    - find
     - gather
+    - get a sense
+    - get more
+    - get up to speed
     - investigate
     - learn
     - research

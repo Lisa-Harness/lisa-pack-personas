@@ -9,12 +9,10 @@ satisfies_intents: [plan]
 routing_intent_keywords:
   plan:
     - plan
-    - prioritized list
+    - prioritize
     - workflow
     - multi-step
     - orchestrate
-    - check list
-    - checklist
 entry_operation_ids: [plan_workflow]
 entry_op_kind: routing
 command_pattern: '^(?:/)?plan(?:er)?(?:[\s,:;]+(?P<query>.+))?$'

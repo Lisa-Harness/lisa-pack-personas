@@ -18,7 +18,7 @@ routing_intent_keywords:
   code:
     - write code
     - write the code
-    - code it up
+    - code it
     - generate code
     - add code
     - modify code

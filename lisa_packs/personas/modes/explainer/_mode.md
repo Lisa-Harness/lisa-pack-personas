@@ -12,10 +12,13 @@ routing_intent_keywords:
     - capture
     - explain
     - expound
+    - give
     - output
     - recap
+    - show
     - summarize
     - synthesize
+    - tell
     - wrap up
     - write it
     - write that

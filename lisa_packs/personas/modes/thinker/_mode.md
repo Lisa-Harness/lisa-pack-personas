@@ -39,7 +39,7 @@ routing_intent_keywords:
     - how to
     - why is
     - what are
-    - what does it mean
+    - what does it
 allowed_tool_ids: [web_search]
 command_pattern: '^(?:/)?think(?:er)?(?:[\s,:;]+(?P<query>.+))?$'
 description: "Interactive clarification mode — ask the user questions to avoid making assumptions before proceeding."
