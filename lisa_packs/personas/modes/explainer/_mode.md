@@ -12,18 +12,7 @@ routing_intent_keywords:
     - capture
     - explain
     - expound
-    - give
-    - output
-    - recap
-    - show
     - summarize
-    - synthesize
-    - tell
-    - wrap up
-    - write it
-    - write that
-    - write document
-    - write markdown
 allowed_operation_ids: [markdown_forge_document, recall_memory, synthesize_and_store_learning]
 description: "Terminal last-resort mode that expounds the work and analysis done so far into a durable markdown artifact. Used by the forced-transition-before-cap path to guarantee every turn ends productively."
 ---
