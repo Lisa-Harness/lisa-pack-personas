@@ -21,13 +21,15 @@ routing_intent_keywords:
     - ambiguous
     - unclear
     - help me decide
+    - help me understand
   consider:
-    - considering
+    - consider
     - thinking about
     - thinking of
     - pro con
     - pro/con
     - pros and cons
+    - ponder
     - weighing if
     - weighing whether
     - weighing which

@@ -16,6 +16,8 @@ routing_intent_keywords:
     - get up to speed
     - investigate
     - learn
+    - look up
+    - lookup
     - research
     - search
 fork_allowed: true

@@ -9,9 +9,11 @@ routing_intent_tags: [read, review, architect, analyze]
 satisfies_intents: [read, review, architect, analyze]
 routing_intent_keywords:
   review:
-    - review
     - analyze
     - critique
+    - examine
+    - inspect
+    - review
   architect:
     - design
     - architect
