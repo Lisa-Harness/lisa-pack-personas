@@ -6,42 +6,32 @@ mode_kind: chat
 routable: true
 priority: 5
 pre_turn_operation_ids: [discussion_briefing]
+# Routing intents are specific clarification/decision signals, not generic
+# question openers. Bare "what is", "how to", "why is", "not sure", "should i",
+# "thinking about", "wondering" are intentionally absent — they match everyday
+# questions and yank the user out of default mode when no deliberation was
+# requested. Use /think for explicit clarification.
 routing_intent_tags: [clarify, consider, question]
 satisfies_intents: [clarify, consider, question]
 routing_intent_keywords:
   clarify:
     - clarify
-    - not sure
-    - figure out
+    - help me decide
+    - help me choose
     - what it means
-    - asking about
-    - questions about
-    - should i
-    - options for
     - ambiguous
     - unclear
-    - help me decide
-    - help me understand
   consider:
-    - consider
-    - thinking about
-    - thinking of
+    - pros and cons
     - pro con
     - pro/con
-    - pros and cons
-    - ponder
     - weighing if
     - weighing whether
     - weighing which
+    - ponder
   question:
-    - question
-    - asking
-    - wondering
-    - what is
-    - how to
-    - why is
-    - what are
-    - what does it
+    - questions about
+    - asking about
 allowed_tool_ids: [web_search]
 command_pattern: '^(?:/)?think(?:er)?(?:[\s,:;]+(?P<query>.+))?$'
 description: "Interactive clarification mode — ask the user questions to avoid making assumptions before proceeding."

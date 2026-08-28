@@ -5,19 +5,23 @@ mode_kind: chat
 routable: true
 command_pattern: '^(?:/)?review(?:er)?(?:[\s,:;]+(?P<query>.+))?$'
 priority: 9
+# Routing intents are specific review/analysis signals, not generic verbs.
+# Bare "analyze", "design", "structure" are intentionally absent — they match
+# everyday requests and yank the user out of default mode. Use /review for
+# explicit review.
 routing_intent_tags: [read, review, architect, analyze]
 satisfies_intents: [read, review, architect, analyze]
 routing_intent_keywords:
   review:
-    - analyze
-    - critique
-    - examine
-    - inspect
     - review
+    - critique
+    - code review
+    - review the code
+    - review my code
   architect:
-    - design
     - architect
-    - structure
+    - design the architecture
+    - design a system
 fork_allowed: true
 allowed_operation_ids: [markdown_forge_document, okf_validate, delegate, fork, recall_memory, synthesize_and_store_learning]
 allowed_tool_ids:

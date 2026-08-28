@@ -5,21 +5,21 @@ mode_kind: chat
 routable: true
 command_pattern: '^(?:/)?research(?:er)?(?:[\s,:;]+(?P<query>.+))?$'
 priority: 7
+# Routing intents are specific research-gathering signals, not generic verbs.
+# Bare "find", "learn", "gather", "look up" are intentionally absent — they
+# match everyday requests and yank the user out of default mode. Use /research
+# for explicit multi-source gathering.
 routing_intent_tags: [research, gather, learn]
 satisfies_intents: [research, gather, learn]
 routing_intent_keywords:
   research:
-    - find
-    - gather
-    - get a sense
-    - get more
-    - get up to speed
-    - investigate
-    - learn
-    - look up
-    - lookup
     - research
-    - search
+    - do research
+    - look up
+    - look into
+    - investigate
+    - get up to speed
+    - get a sense of
 fork_allowed: true
 allowed_operation_ids:
   - delegate

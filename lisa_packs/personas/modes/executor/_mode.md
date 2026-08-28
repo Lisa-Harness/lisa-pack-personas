@@ -5,16 +5,17 @@ mode_kind: chat
 routable: true
 command_pattern: '^(?:/)?exec(?:ute|utor)?(?:[\s,:;]+(?P<query>.+))?$'
 priority: 1
+# Routing intents are specific code-editing signals, not generic verbs.
+# Bare "build", "create", "fix" are intentionally absent — they match everyday
+# requests and yank the user out of default mode. Use /exec for explicit
+# implementation.
 routing_intent_tags: [code, write, implement]
 satisfies_intents: [code, write, implement]
 routing_intent_keywords:
   implement:
     - implement
-    - build
-    - create
-    - fix
     - refactor
-    - patch
+    - patch this
   code:
     - write code
     - write the code
