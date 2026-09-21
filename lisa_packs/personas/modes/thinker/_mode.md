@@ -5,6 +5,10 @@ start_stage_id: none
 mode_kind: chat
 routable: true
 priority: 5
+fast_path_patterns:
+  - "\\bthink(?:er)?\\b"
+  - "\\bponder\\b"
+  - "\\bclarify\\b"
 pre_turn_operation_ids: [discussion_briefing]
 # Routing intents are specific clarification/decision signals, not generic
 # question openers. Bare "what is", "how to", "why is", "not sure", "should i",

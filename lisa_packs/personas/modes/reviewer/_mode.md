@@ -5,6 +5,9 @@ mode_kind: chat
 routable: true
 command_pattern: '^(?:/)?review(?:er)?(?:[\s,:;]+(?P<query>.+))?$'
 priority: 9
+fast_path_patterns:
+  - "\\breview(?:er)?\\b"
+  - "\\bcode review\\b"
 # Routing intents are specific review/analysis signals, not generic verbs.
 # Bare "analyze", "design", "structure" are intentionally absent — they match
 # everyday requests and yank the user out of default mode. Use /review for

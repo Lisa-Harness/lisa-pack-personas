@@ -5,6 +5,9 @@ mode_kind: chat
 routable: true
 command_pattern: '^(?:/)?explain(?:er)?(?:[\s,:;]+(?P<query>.+))?$'
 priority: 1
+fast_path_patterns:
+  - "\\bexplain(?:er)?\\b"
+  - "\\bsummarize\\b"
 routing_intent_tags: [explain, expound, summarize, capture]
 satisfies_intents: [explain, expound, summarize, capture]
 routing_intent_keywords:

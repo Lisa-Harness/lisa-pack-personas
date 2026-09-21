@@ -5,6 +5,8 @@ mode_kind: chat
 routable: true
 command_pattern: '^(?:/)?exec(?:ute|utor)?(?:[\s,:;]+(?P<query>.+))?$'
 priority: 1
+fast_path_patterns:
+  - "\\bexec(?:ute|utor)?\\b"
 # Routing intents are specific code-editing signals, not generic verbs.
 # Bare "build", "create", "fix" are intentionally absent — they match everyday
 # requests and yank the user out of default mode. Use /exec for explicit

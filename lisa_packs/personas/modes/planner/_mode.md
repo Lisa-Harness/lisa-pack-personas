@@ -4,6 +4,10 @@ mode_provider_id: lisa-pack-personas
 mode_kind: action
 routable: true
 priority: 11
+fast_path_patterns:
+  - "\\bplan(?:ner)?\\b"
+  - "\\bprioritize\\b"
+  - "\\bmulti.?step\\b"
 routing_intent_tags: [plan]
 satisfies_intents: [plan]
 routing_intent_keywords:

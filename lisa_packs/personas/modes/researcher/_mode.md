@@ -5,6 +5,10 @@ mode_kind: chat
 routable: true
 command_pattern: '^(?:/)?research(?:er)?(?:[\s,:;]+(?P<query>.+))?$'
 priority: 7
+fast_path_patterns:
+  - "\\bresearch(?:er)?\\b"
+  - "\\bget up to speed\\b"
+  - "\\bup to date\\b"
 # Routing intents: research-gathering signals. Generic verbs ("find",
 # "learn", "gather") are absent — they match everyday requests and yank
 # the user out of default mode. But search and currency signals ARE
