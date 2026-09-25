@@ -18,7 +18,7 @@ name = "lisa-pack-personas"
 version = "0.1.0"
 description = "Cognitive task-phase personas for Lisa"
 dependencies = [
-    "lisa-sdk"
+    "lisa-harness-sdk"
 ]
 
 [project.entry-points."lisa.extensions.content_roots"]
