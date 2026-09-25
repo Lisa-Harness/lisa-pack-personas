@@ -9,5 +9,5 @@ reviewer, and executor modes that route by task-phase intent.
 pip install -e .
 ```
 
-See the parent [`lisa-packs`](https://github.com/Lisa-Framework/lisa-packs)
+See the parent [`lisa-packs`](https://github.com/Lisa-Harness/lisa-packs)
 repo for the submodule promotion lifecycle.
