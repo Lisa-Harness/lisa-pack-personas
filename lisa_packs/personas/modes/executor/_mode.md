@@ -30,6 +30,7 @@ routing_intent_keywords:
     - write code
     - write the code
 fork_allowed: true
+approval_continuation: resume
 allowed_operation_ids: [delegate, fork, okf_emit_concept, markdown_forge_document, recall_memory, synthesize_and_store_learning]
 allowed_tool_ids:
   - coding_list_directory
