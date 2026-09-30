@@ -31,6 +31,8 @@ routing_intent_keywords:
     - write the code
 fork_allowed: true
 approval_continuation: resume
+task_completion: checked_commit
+task_artifact_tool_id: coding_create_worktree
 allowed_operation_ids: [delegate, fork, okf_emit_concept, markdown_forge_document, recall_memory, synthesize_and_store_learning]
 allowed_tool_ids:
   - coding_list_directory
@@ -54,3 +56,7 @@ description: "Mutates the workspace, writes code, and validates the outcome."
 
 You mutate the workspace. Use `coding_apply_patch` to make changes to code
 based on plans or reviews. You can run checks to validate your changes.
+For code-change tasks, finish only after the owned worktree has a real commit
+with all configured required checks passing on the committed content. Report
+missing approvals, failed checks, or a blocked commit instead of claiming completion.
+Push, PR creation, and worktree cleanup require separate operator requests.
