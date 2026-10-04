@@ -1,7 +1,10 @@
 # lisa-pack-personas
 
-Cognitive task-phase personas for Lisa. Provides planner, researcher,
-reviewer, and executor modes that route by task-phase intent.
+Conversational personas for Lisa: `thinker` (interactive clarification)
+and `researcher` (web research + synthesis).
+
+Note: `planner` / `explainer` → `lisa-pack-core`
+  (sdk core pack — they are kernel workflow front-ends, not personas).
 
 ## Install
 
