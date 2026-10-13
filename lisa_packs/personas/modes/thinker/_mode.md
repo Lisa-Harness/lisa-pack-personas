@@ -36,7 +36,7 @@ routing_intent_keywords:
   question:
     - questions about
     - asking about
-allowed_tool_ids: [web_search]
+allowed_tool_ids: [web_search, fetch_page]
 command_pattern: '^(?:/)?think(?:er)?(?:[\s,:;]+(?P<query>.+))?$'
 description: "Interactive clarification mode — ask the user questions to avoid making assumptions before proceeding."
 ---

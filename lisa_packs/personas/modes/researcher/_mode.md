@@ -41,6 +41,7 @@ allowed_operation_ids:
   - synthesize_and_store_learning
 allowed_tool_ids:
   - web_search
+  - fetch_page
 description: "Gathers and synthesizes fresh context from the web and writes durable artifacts."
 ---
 
