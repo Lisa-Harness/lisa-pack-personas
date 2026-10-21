@@ -17,8 +17,26 @@ include = ["lisa_packs*", "lisa_packs.personas*"]
 name = "lisa-pack-personas"
 version = "0.1.0"
 description = "Cognitive task-phase personas for Lisa"
+requires-python = ">=3.11"
 dependencies = [
     "lisa-harness-sdk"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-mock>=3.14.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["lisa_packs/personas/tests"]
+asyncio_mode = "auto"
+markers = [
+    "live: hits real provider APIs and prints a tester-visible summary",
+    "integration: multi-module in-process test",
+    "eval: deterministic agent regression evals (no model calls, no I/O)",
 ]
 
 [project.entry-points."lisa.extensions.content_roots"]
