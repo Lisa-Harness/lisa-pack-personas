@@ -11,6 +11,7 @@ include = ["lisa_packs*", "lisa_packs.personas*"]
     "modes/**/*.md",
     "modes/**/*.yaml",
     "modes/**/*.yml",
+    "operations/**/*.md",
 ]
 
 [project]
