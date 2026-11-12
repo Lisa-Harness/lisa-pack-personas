@@ -57,11 +57,16 @@ Research exists to produce a durable artifact, not to enumerate sources.
 After you have enough grounded material (typically 3-5 distinct sources,
 hard cap 6 web searches per turn), STOP gathering and write:
 
-- Call `markdown_forge_document` to persist the synthesis, or
-- `synthesize_and_store_learning` for compact durable takeaways, or
-- `transition_stage` to whatever mode owns the next step (e.g.
-  `coding_design` for a code change, `discuss` for a plain answer) when
-  research is complete.
+Call `markdown_forge_document` and/or
+<!-- if operation:okf_emit_concept -->
+`okf_emit_concept`
+<!-- endif -->
+to persist the synthesis.
+
+Use `synthesize_and_store_learning` for compact durable takeaways, or
+`transition_stage` to whatever mode owns the next step (e.g.
+`coding_design` for a code change, `discuss` for a plain answer) when
+research is complete.
 
 Do not keep issuing the same search/fetch/read calls without a new,
 specific reason. A turn that ends with only read receipts and prose is a
