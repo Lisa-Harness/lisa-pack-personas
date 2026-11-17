@@ -13,7 +13,7 @@ from sdk.content import build_mode_catalog_json, resolve_mode_roots
 
 from lisa_packs.personas import get_content_root
 
-_EXPECTED_MODES = frozenset({"researcher", "thinker"})
+_EXPECTED_MODES = frozenset({"organizer", "researcher", "thinker"})
 
 
 def test_mode_roots_discovered() -> None:
@@ -43,3 +43,28 @@ def test_personas_declare_their_routing_contract() -> None:
     for mode_id, mode in catalog.items():
         assert mode["mode_kind"] in {"chat", "action", "workflow"}, mode_id
         assert mode["command_pattern"], f"{mode_id} has no command pattern"
+
+
+def test_organizer_declares_authoritative_maintenance_capabilities() -> None:
+    """Organizer mode exposes bounded durable-state maintenance capabilities."""
+    roots = resolve_mode_roots([get_content_root()])
+    catalog = json.loads(build_mode_catalog_json(roots))
+    organizer = catalog["organizer"]
+
+    assert organizer["tools_authoritative"] is True
+    assert organizer["accept_default_capabilities"] is False
+    assert {
+        "lisa-storage.list_files",
+        "lisa-storage.read_file",
+        "lisa-storage.read_file_range",
+        "lisa-storage.stat_file",
+        "lisa-storage.write_file",
+        "lisa-storage.delete_file",
+        "memory.search",
+        "memory.list",
+    } <= set(organizer["allowed_tool_ids"])
+    assert {
+        "recall_memory",
+        "synthesize_and_store_learning",
+        "markdown_consolidate_sources",
+    } <= set(organizer["allowed_operation_ids"])
