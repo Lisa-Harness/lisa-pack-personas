@@ -41,17 +41,17 @@ tools_authoritative: true
 accept_default_capabilities: false
 required_capabilities: [tools]
 allowed_tool_ids:
-  - lisa-storage.list_files
-  - lisa-storage.read_file
-  - lisa-storage.read_file_range
-  - lisa-storage.stat_file
-  - lisa-storage.write_file
-  - lisa-storage.append_file
-  - lisa-storage.delete_file
-  - lisa-storage.make_dir
-  - memory.search
-  - memory.list
   - memory.add
+  - memory.list
+  - memory.search
+  - storage.append_file
+  - storage.delete_file
+  - storage.list_files
+  - storage.make_dir
+  - storage.read_file
+  - storage.read_file_range
+  - storage.stat_file
+  - storage.write_file
 allowed_operation_ids:
   - recall_memory
   - synthesize_and_store_learning
@@ -94,7 +94,7 @@ information or silently changing meaning.
 
 Use the OKF operation guidance below only when the corresponding operation is
 available in the installed catalog. If an operation is unavailable, do not
-call it; use the permitted `lisa-storage.*` tools instead and report the
+call it; use the permitted `storage.*` tools instead and report the
 limitation.
 
 <!-- if operation:okf_validate -->
@@ -113,7 +113,7 @@ limitation.
 
 ## Destructive-change rules
 
-- `lisa-storage.delete_file` is available for targeted cleanup, not broad
+- `storage.delete_file` is available for targeted cleanup, not broad
   deletion. Never delete a directory recursively, use a wildcard-like path,
   or remove an item merely because it looks old or duplicated.
 - Ask for confirmation before an irreversible deletion or a batch of
@@ -130,7 +130,7 @@ limitation.
 
 ## Scope and safety
 
-- Keep paths relative to the `lisa-storage` sandbox. Do not access the host
+- Keep paths relative to the `storage` sandbox. Do not access the host
   filesystem through another mechanism.
 - Prefer small, reviewable changes. Do not reorganize unrelated areas in the
   same pass.
