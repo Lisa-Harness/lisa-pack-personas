@@ -4,6 +4,7 @@ mode_provider_id: lisa-pack-personas
 mode_kind: chat
 routable: true
 priority: 7
+completion_budget_tokens: 32768
 fast_path_patterns:
   - "\\borgan(?:ize|izer)\\b"
   - "\\b(?:storage|file|memory)\\s+(?:cleanup|maintenance)\\b"
@@ -48,6 +49,7 @@ allowed_tool_ids:
   - storage.delete_file
   - storage.list_files
   - storage.make_dir
+  - storage.move_file
   - storage.read_file
   - storage.read_file_range
   - storage.stat_file
